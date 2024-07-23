@@ -32,6 +32,6 @@ figure;
 scatter3(x_coords, y_coords, mean_ryusoku, 'filled');
 xlabel('X座標[mm]');
 ylabel('Y座標[mm]');
-zlabel('平均流速分布[m/s]');
-title('Average Voltage Distribution');
+zlabel('平均流速[m/s]');
+title('平均流速分布');
 grid on;
