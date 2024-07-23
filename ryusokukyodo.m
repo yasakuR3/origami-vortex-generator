@@ -34,7 +34,7 @@ for k = 1:num_files
 end
 
 % 結果の表示
-disp('ファイル名から抽出した座標と計算した平均流速:');
+disp('x[mm]座標とy座標[mm]と平均流速[m/s]:');
 result_table = table(x_coords, y_coords, mean_ryusoku);
 disp(result_table);
 
