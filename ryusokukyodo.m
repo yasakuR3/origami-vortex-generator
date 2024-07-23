@@ -44,6 +44,6 @@ std_velocity = std(all_data);
 turbulence_intensity = std_velocity / mean_velocity;
 
 % 結果の表示
-fprintf('全データの平均流速: %.2f\n', mean_velocity);
+fprintf('全データの平均流速[m/s]: %.2f\n', mean_velocity);
 fprintf('全データの流速の標準偏差: %.2f\n', std_velocity);
 fprintf('全データの乱流強度: %.2f\n', turbulence_intensity);
