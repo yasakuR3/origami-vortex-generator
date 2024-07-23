@@ -39,8 +39,8 @@ figure;
 surf(x_grid, y_grid, z_grid, 'EdgeColor', 'none');
 xlabel('X座標[mm]');
 ylabel('Y座標[mm]');
-zlabel('平均流速分布[m/s]');
-title('平均流速分布のサーフェスプロット');
+zlabel('平均流速[m/s]');
+title('平均流速分布');
 colorbar;
 grid on;
 
@@ -49,5 +49,5 @@ figure;
 contourf(x_grid, y_grid, z_grid, 20, 'LineColor', 'none');
 xlabel('X座標[mm]');
 ylabel('Y座標[mm]');
-title('平均流速分布の等高線プロット');
+title('平均流速分布の等高線');
 colorbar;
