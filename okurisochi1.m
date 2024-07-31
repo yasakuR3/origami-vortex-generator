@@ -6,7 +6,7 @@ s = daq.createSession('ni');
 addAnalogInputChannel(s,'Dev1','ai0','Voltage');
 
 s.Rate=20e3; % サンプリングレート 周波数
-s.DurationInSeconds = 1;%サンプリングタイム　ある一点における計測時間
+s.DurationInSeconds = 1;%サンプリングタイム　ある一点における計測時間 計測時間を長くすることでノイズの影響を少なくできる。
  
  nx=10;
  dx=10;
@@ -14,7 +14,6 @@ s.DurationInSeconds = 1;%サンプリングタイム　ある一点における�
  dy=10;
 
 ser=[];
-ser=GP_two_axes_motor_drive(2*dy,0,ser);
 
 for j=1:ny
     for i=1:nx
